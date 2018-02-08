@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity Engine;
+using UnityEngine;
 
 //Script for 2D controls
 
