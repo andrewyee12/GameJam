@@ -42,6 +42,8 @@ public class Player : MonoBehaviour
 				hasGun = true;
 			}
 
+		} else if (other.gameObject.tag == "Wall") {
+			// TODO - handle wall collision
 		}
 	}
 
