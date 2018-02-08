@@ -28,8 +28,11 @@ public class Player : MonoBehaviour
   void Update()
   {
     // move the ship left and right, depending on the horizontal input
-    transform.position += Vector3.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-    transform.position += Vector3.up * Input.GetAxis("Vertical") * speed * Time.deltaTime;
+    Vector3 direction = new Vector3(0,0,0);
+    direction.x = Input.GetAxis("Horizontal");
+    direction.y = Input.GetAxis("Vertical");
+    transform.position += Vector3.right * direction.x * speed * Time.deltaTime;
+    transform.position += Vector3.up * direction.y * speed * Time.deltaTime;
 
   }
 
