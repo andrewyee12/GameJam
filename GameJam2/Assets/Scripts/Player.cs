@@ -14,22 +14,36 @@ public class Player : MonoBehaviour
 		Dead
 	}
 
+	// Player item collection variables
+	public float gunParts = 0;
+	public bool hasGun = false;
+
   PlatformerController2D controller;
   SpriteRenderer[] sr;
   PlayerStatus status;
   Coroutine hurtRoutine;
-
 
   void Awake ()
 	{
 		controller = GetComponent<PlatformerController2D> ();
 		sr = GetComponentsInChildren<SpriteRenderer> ();
 		status = PlayerStatus.Active;
+		gunParts = 0;
+		hasGun = false;
 	}
 
+	// For collision with gun parts
+	void OnTriggerEnter2D(Collider2D other) {
+		if (other.gameObject.tag == "GunPart") {
+			Destroy(other.gameObject);
+			gunParts += 1;
 
+			if (gunParts >= 4) {
+				hasGun = true;
+			}
 
-
+		}
+	}
 
 
 
