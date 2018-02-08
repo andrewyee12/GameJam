@@ -4,15 +4,16 @@ using UnityEngine;
 
 /// Module for player controller input when using a PlatformController2D.
 
+[RequireComponent (typeof(PlatformerController2D))]
 public class PlayerInputModule2D : MonoBehaviour
 
 {
 
-  PlatformController2D controller;
+  PlatformerController2D controller;
 
   void Start ()
   {
-    controller = GetComponent<PlatformController2D> ();
+    controller = GetComponent<PlatformerController2D> ();
   }
 
   void FixedUpdate ()
@@ -21,7 +22,7 @@ public class PlayerInputModule2D : MonoBehaviour
     if (input.magnitude > 1) {
       input.Normalize ();
     }
-    controller.input = input; 
+    controller.input = input;
   }
 
 

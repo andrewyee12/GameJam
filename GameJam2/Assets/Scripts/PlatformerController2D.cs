@@ -8,7 +8,7 @@ public class PlatformerController2D : MonoBehaviour
 {
   [HideInInspector] public Vector2 input;
 
-  [Tooltip ("Can this object move.")]git
+  [Tooltip ("Can this object move.")]
   public bool canMove = true;
 
   [Header ("Controls")]
