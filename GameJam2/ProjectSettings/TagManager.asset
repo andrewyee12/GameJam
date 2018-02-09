@@ -14,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
+  - Button
   - Player
-  - 
   - 
   - 
   - 
@@ -41,6 +41,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Button
+    uniqueID: 3744079743
     locked: 0
   - name: Player
     uniqueID: 804428915
