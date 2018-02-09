@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour {
-	static float timeLeft = 120.0f;
+	static float timeLeft = 300.0f;
 	void Update(){
 		timeLeft -= Time.deltaTime;
 	}
