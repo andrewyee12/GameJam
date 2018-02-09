@@ -10857,8 +10857,8 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -12, y: 0, z: 0}
-  m_Size: {x: 12, y: 5, z: 1}
+  m_Origin: {x: -12, y: -8, z: 0}
+  m_Size: {x: 12, y: 13, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -11148,11 +11148,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4657985027607154, guid: 8a9bbbfd27dfe4ce3b1ba7e7ba2bd808, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -10.5
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4657985027607154, guid: 8a9bbbfd27dfe4ce3b1ba7e7ba2bd808, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.9
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 4657985027607154, guid: 8a9bbbfd27dfe4ce3b1ba7e7ba2bd808, type: 2}
       propertyPath: m_LocalPosition.z
@@ -11288,7 +11288,7 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 1
+  m_HDR: 0
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
@@ -11319,8 +11319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b85654a184e14b8da37d96a75218f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Boundary: 30
-  speed: 5
+  Boundary: 75
+  speed: 10
   player: {fileID: 171027574}
 --- !u!1001 &1670924478
 Prefab:
