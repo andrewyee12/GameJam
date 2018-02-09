@@ -90,7 +90,6 @@ public class Player : MonoBehaviour
 		controller = GetComponent<PlatformerController2D> ();
 		sr = GetComponentsInChildren<SpriteRenderer> ();
 		status = PlayerStatus.Active;
-		hasGun = false;
 	}
 
 	// For collision with gun parts
