@@ -21,13 +21,15 @@ public class Projectile : MonoBehaviour{
 	{
 		if (other.CompareTag ("Monster")) { 
 			Monster monster = other.GetComponent<Monster>();
-			Destroy (gameObject); // Destroy this projectile
+            Destroy(gameObject);
+            monster.OnHit();
 		}
 
         if (other.CompareTag("StaticMonster"))
         {
             StaticMonster monster = other.GetComponent<StaticMonster>();
-            Destroy(gameObject); // Destroy this projectile
+            Destroy(gameObject);
+            monster.OnHit();
         }
 	}
 

@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     }
 
     // Player item collection variables
-    public static bool hasGun = false;
+    public static bool hasGun = true;
     public GameObject bullet;
 
     PlatformerController2D controller;
@@ -104,7 +104,8 @@ public class Player : MonoBehaviour
 		} else if (other.gameObject.tag == "Wall") {
 			// TODO - handle wall collision
 		} else if (other.gameObject.tag == "Monster" || other.gameObject.tag == "StaticMonster" || other.gameObject.tag == "Lava") {
-            
+
+            hasGun = false;
             gameObject.GetComponent<Renderer>().enabled = false;
             int scene = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(0, LoadSceneMode.Single);

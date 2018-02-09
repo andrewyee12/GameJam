@@ -18,5 +18,9 @@ public class Monster : MonoBehaviour{
 		}
 	}
 
+    public void OnHit() {
+        Destroy(gameObject);
+    }
+
 }
 
