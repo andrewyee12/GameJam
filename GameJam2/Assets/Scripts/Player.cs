@@ -83,6 +83,9 @@ public class Player : MonoBehaviour
 		} else if (other.gameObject.tag == "Wall") {
 			// TODO - handle wall collision
 		}
+    else if (other.gameObject.tag == "Lava") {
+      Destroy(gameObject);
+    }
 	}
 
 
