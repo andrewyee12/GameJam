@@ -9,7 +9,7 @@ public class Button : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if(other.tag == "Crate") {
 			Debug.Log("message"); 
-			scientist.GetComponent<Player>().hasGun = true; 
+			Player.hasGun = true; 
 		}
 	}
 }

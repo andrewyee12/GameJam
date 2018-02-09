@@ -10,6 +10,7 @@ TagManager:
   - Button
   - StaticMonster
   - Crate
+  - Final Button
   layers:
   - Default
   - TransparentFX
