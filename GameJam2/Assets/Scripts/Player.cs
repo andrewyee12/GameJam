@@ -108,15 +108,10 @@ public class Player : MonoBehaviour
             
             StartCoroutine(WaitSeconds());
             gameObject.GetComponent<Renderer>().enabled = false;
+            int scene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(0, LoadSceneMode.Single);
 
         }
-	}
-
-    IEnumerator WaitSeconds ()
-	{
-	    yield return new WaitForSeconds (3);
-        int scene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
 	}
 
 }
