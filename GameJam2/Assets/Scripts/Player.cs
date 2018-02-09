@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 //Player script. Manages players interaction with environment/enemies
@@ -103,14 +104,19 @@ public class Player : MonoBehaviour
 
 		} else if (other.gameObject.tag == "Wall") {
 			// TODO - handle wall collision
-		}
-    else if (other.gameObject.tag == "Lava") {
-      Destroy(gameObject);
-    }
+		} else if (other.gameObject.tag == "Monster" || other.gameObject.tag == "StaticMonster" || other.gameObject.tag == "Lava") {
+            
+            StartCoroutine(WaitSeconds());
+            gameObject.GetComponent<Renderer>().enabled = false;
+
+        }
 	}
 
-
-
-
+    IEnumerator WaitSeconds ()
+	{
+	    yield return new WaitForSeconds (3);
+        int scene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
+	}
 
 }
