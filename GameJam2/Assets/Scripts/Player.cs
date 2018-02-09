@@ -5,41 +5,41 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
-  [Tooltip("How fast is the spaceship moving left to right")]
+    [Tooltip("How fast is the spaceship moving left to right")]
     public float speed;
 
-  public enum PlayerStatus
-	{
-		Hurt,
-		Active,
-		InActive,
-		Dead
-	}
+    public enum PlayerStatus
+    {
+        Hurt,
+        Active,
+        InActive,
+        Dead
+    }
 
-	// Player item collection variables
-	public float gunParts = 0;
-	public bool hasGun = false;
+    // Player item collection variables
+    public float gunParts = 0;
+    public bool hasGun = true;
     public GameObject bullet;
 
-  PlatformerController2D controller;
-  SpriteRenderer[] sr;
-  PlayerStatus status;
-  Coroutine hurtRoutine;
+    PlatformerController2D controller;
+    SpriteRenderer[] sr;
+    PlayerStatus status;
+    Coroutine hurtRoutine;
     Rigidbody2D player = null;
 
     void Start()
     {
-        player = GetComponent<Rigidbody2D>();  
+        player = GetComponent<Rigidbody2D>();
     }
 
-  //  void Update()
-  //{
+    //  void Update()
+    //{
     // move the ship left and right, depending on the horizontal input
 
     //transform.position += Vector3.right * direction.x * speed * Time.deltaTime;
     //transform.position += Vector3.up * direction.y * speed * Time.deltaTime;
 
-  //}
+    //}
     void FixedUpdate()
     {
         Vector3 direction = new Vector3(0, 0, 0);
@@ -54,10 +54,24 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) {
-            if (hasGun) {
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        {
+            if (hasGun)
+            {
                 Instantiate(bullet, transform.position, Quaternion.identity);
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+            bullet.GetComponent<Projectile>().direction = new Vector2(-1, 0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+            bullet.GetComponent<Projectile>().direction = new Vector2(1, 0);
         }
     }
 

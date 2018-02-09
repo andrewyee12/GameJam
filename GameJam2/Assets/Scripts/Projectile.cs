@@ -24,6 +24,13 @@ public class Projectile : MonoBehaviour{
 			monster.OnHit (); // notify the monster it got hit
 			Destroy (gameObject); // Destroy this projectile
 		}
+
+        if (other.CompareTag("StaticMonster"))
+        {
+            StaticMonster monster = other.GetComponent<StaticMonster>();
+            monster.OnHit(); // notify the monster it got hit
+            Destroy(gameObject); // Destroy this projectile
+        }
 	}
 
 	IEnumerator KillAfterSeconds (float seconds)
