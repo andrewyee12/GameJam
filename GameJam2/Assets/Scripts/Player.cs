@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     }
 
     // Player item collection variables
-    public float gunParts = 0;
     public bool hasGun = true;
     public GameObject bullet;
 
@@ -90,7 +89,6 @@ public class Player : MonoBehaviour
 		controller = GetComponent<PlatformerController2D> ();
 		sr = GetComponentsInChildren<SpriteRenderer> ();
 		status = PlayerStatus.Active;
-		gunParts = 0;
 		hasGun = false;
 	}
 
@@ -98,9 +96,8 @@ public class Player : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.tag == "GunPart") {
 			Destroy(other.gameObject);
-			gunParts += 1;
 
-			if (gunParts >= 4) {
+			if (!hasGun) {
 				hasGun = true;
 			}
 
