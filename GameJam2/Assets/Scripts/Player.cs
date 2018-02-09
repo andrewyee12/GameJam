@@ -106,7 +106,6 @@ public class Player : MonoBehaviour
 			// TODO - handle wall collision
 		} else if (other.gameObject.tag == "Monster" || other.gameObject.tag == "StaticMonster" || other.gameObject.tag == "Lava") {
             
-            StartCoroutine(WaitSeconds());
             gameObject.GetComponent<Renderer>().enabled = false;
             int scene = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(0, LoadSceneMode.Single);
