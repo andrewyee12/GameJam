@@ -44,10 +44,21 @@ public class Player : MonoBehaviour
         Vector3 direction = new Vector3(0, 0, 0);
         direction.x = Input.GetAxis("Horizontal");
         direction.y = Input.GetAxis("Vertical");
+        direction = direction.normalized;
 
         Vector2 vel = direction * speed;
         player.velocity = vel;
 
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("COLLISION");
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("TRIGGER");
     }
 
     void Awake ()
