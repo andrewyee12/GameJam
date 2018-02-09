@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114796515639413266}
   - component: {fileID: 114627055962585064}
   - component: {fileID: 114547035383165466}
-  - component: {fileID: 60223862331274214}
+  - component: {fileID: 61773272115503212}
   m_Layer: 0
   m_Name: Scientist
   m_TagString: Player
@@ -95,8 +95,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!60 &60223862331274214
-PolygonCollider2D:
+--- !u!61 &61773272115503212
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -117,12 +117,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.65000004, y: -1}
-      - {x: 0.65000004, y: -1}
-      - {x: 0.65000004, y: 1}
-      - {x: -0.65000004, y: 1}
+  serializedVersion: 2
+  m_Size: {x: 1.3, y: 2}
+  m_EdgeRadius: 0
 --- !u!114 &114547035383165466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -160,8 +157,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  gunParts: 0
-  hasGun: 0
+  hasGun: 1
+  bullet: {fileID: 0}
 --- !u!212 &212060206278201986
 SpriteRenderer:
   m_ObjectHideFlags: 1
