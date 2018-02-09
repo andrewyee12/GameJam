@@ -4228,6 +4228,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114353843642152268, guid: 2a738d5c551bb4c059c0fe3cbb4fa26d,
+        type: 2}
+      propertyPath: m_Text
+      value: You need to find the gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 224385767437437586, guid: 2a738d5c551bb4c059c0fe3cbb4fa26d,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -33.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a738d5c551bb4c059c0fe3cbb4fa26d, type: 2}
   m_IsPrefabParent: 0
@@ -5915,6 +5925,120 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 08c262bef0b094d0d969ea674065a8af, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &967115558
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654054057899194, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654054057899194, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654054057899194, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654054057899194, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654054057899194, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654054057899194, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654054057899194, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4654054057899194, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: UIText
+      value: 
+      objectReference: {fileID: 1386017531}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.data[0]
+      value: You need to find the gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.data[1]
+      value: Figure out how to unlock it
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.data[2]
+      value: When you do
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.data[3]
+      value: press shift to fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.data[4]
+      value: "You accidentally pressed the \nlab self destruct button"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.data[5]
+      value: 'D: OH NOOOOOOO'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.data[6]
+      value: "You need to find the \nONE BUTTON"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.data[7]
+      value: 'That will keep
+
+        the lab from exploding'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.data[8]
+      value: GOOD LUCK
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.data[9]
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.data[10]
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114008197829687378, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: text.Array.data[11]
+      value: "What are you \nwaiting for?"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1072820134
 Prefab:
   m_ObjectHideFlags: 0
@@ -6069,6 +6193,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4192121976765750, guid: 08c262bef0b094d0d969ea674065a8af,
     type: 2}
   m_PrefabInternal: {fileID: 1300171128}
+--- !u!1 &1386017531 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1542816278296390, guid: 2a738d5c551bb4c059c0fe3cbb4fa26d,
+    type: 2}
+  m_PrefabInternal: {fileID: 521469824}
 --- !u!1001 &1466793784
 Prefab:
   m_ObjectHideFlags: 0
