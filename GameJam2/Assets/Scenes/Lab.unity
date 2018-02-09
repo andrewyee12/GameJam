@@ -937,6 +937,16 @@ Prefab:
       propertyPath: UIText
       value: 
       objectReference: {fileID: 836468918}
+    - target: {fileID: 212381280858840022, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -550887553
+      objectReference: {fileID: 0}
+    - target: {fileID: 212381280858840022, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd, type: 2}
   m_IsPrefabParent: 0

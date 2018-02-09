@@ -4238,6 +4238,11 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: -33.1
       objectReference: {fileID: 0}
+    - target: {fileID: 223055792399255236, guid: 2a738d5c551bb4c059c0fe3cbb4fa26d,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -550887553
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a738d5c551bb4c059c0fe3cbb4fa26d, type: 2}
   m_IsPrefabParent: 0
@@ -5864,6 +5869,16 @@ Prefab:
         type: 2}
       propertyPath: scientist
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 212852038563185348, guid: 28f13706cab2942c9beb67ee6e17cfda,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -550887553
+      objectReference: {fileID: 0}
+    - target: {fileID: 212852038563185348, guid: 28f13706cab2942c9beb67ee6e17cfda,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 61273265794083250, guid: 28f13706cab2942c9beb67ee6e17cfda, type: 2}
