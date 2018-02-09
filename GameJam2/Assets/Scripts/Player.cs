@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
 	// Player item collection variables
 	public float gunParts = 0;
 	public bool hasGun = false;
+    public GameObject bullet;
 
   PlatformerController2D controller;
   SpriteRenderer[] sr;
@@ -49,6 +50,15 @@ public class Player : MonoBehaviour
         Vector2 vel = direction * speed;
         player.velocity = vel;
 
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) {
+            if (hasGun) {
+                Instantiate(bullet, transform.position, Quaternion.identity);
+            }
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -87,6 +97,8 @@ public class Player : MonoBehaviour
       Destroy(gameObject);
     }
 	}
+
+
 
 
 
