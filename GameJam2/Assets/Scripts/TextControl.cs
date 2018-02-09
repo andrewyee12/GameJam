@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TextControl : MonoBehaviour {
 
-    private string[] text = {
+    public string[] text = {
         "Welcome to the lab \n(Press Space to advance text)",
         "You are trapped \nin a secret underground lab",
         "You were running \nan experiment...",

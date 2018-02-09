@@ -742,6 +742,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bc413ad0d5fa443296bfa94960ffa12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text:
+  - "Welcome to the lab \n(Press Space to advance text)"
+  - "You are trapped \nin a secret underground lab"
+  - "You were running \nan experiment..."
+  - "...To find a cure for \nmale pattern baldness"
+  - "You accidentally pressed the \nlab self destruct button"
+  - 'D: OH NOOOOOOO'
+  - "You need to find the \nONE BUTTON"
+  - 'That will keep
+
+    the lab from exploding'
+  - GOOD LUCK
+  - '...'
+  - '...'
+  - "What are you \nwaiting for?"
+  - 
   UIText: {fileID: 836468918}
 --- !u!212 &804700894
 SpriteRenderer:
@@ -777,7 +793,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300086, guid: c37fbb34d27f444eb89b4fd05221a2d9, type: 3}
+  m_Sprite: {fileID: 21300088, guid: c37fbb34d27f444eb89b4fd05221a2d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
