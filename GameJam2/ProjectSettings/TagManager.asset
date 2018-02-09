@@ -8,6 +8,8 @@ TagManager:
   - Monster
   - Lava
   - Button
+  - StaticMonster
+  - Crate
   layers:
   - Default
   - TransparentFX

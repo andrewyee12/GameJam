@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     }
 
     // Player item collection variables
-    public bool hasGun = true;
+    public bool hasGun = false;
     public GameObject bullet;
 
     PlatformerController2D controller;
