@@ -262,6 +262,16 @@ Prefab:
       propertyPath: m_TagString
       value: Crate
       objectReference: {fileID: 0}
+    - target: {fileID: 212875657460250466, guid: beb46da48c463476a87c5f93073c7c53,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 804428915
+      objectReference: {fileID: 0}
+    - target: {fileID: 212875657460250466, guid: beb46da48c463476a87c5f93073c7c53,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: beb46da48c463476a87c5f93073c7c53, type: 2}
   m_IsPrefabParent: 0
@@ -6050,6 +6060,16 @@ Prefab:
         type: 2}
       propertyPath: text.Array.data[11]
       value: "What are you \nwaiting for?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 212381280858840022, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -550887553
+      objectReference: {fileID: 0}
+    - target: {fileID: 212381280858840022, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6749cbe0dbe294eb18fdc5bc1ceca4bd, type: 2}
